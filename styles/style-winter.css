@@ -1,0 +1,536 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mouse-cursor.png") -1 0, pointer;
+}
+
+.winter-page {
+  background-image: linear-gradient(180deg, blue, white);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+}
+
+/* bright */
+/* ANNIMATION */
+.b-image-container {
+  width:5%;
+  height: 5%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 2;
+  /* animation: bright-moving 9s infinite; */
+}
+
+@keyframes b-move {
+  0% {
+    top: -20vh;
+  }
+
+  97% {
+    top: 85vh;
+  }
+
+  99% {
+    top: 88vh;
+  }
+
+  100% {
+    top: 95vh;
+  }
+}
+
+.b-image-container--1 {
+  left: 40%;
+  animation: b-move 9s 0s infinite;
+}
+
+.b-image-container--2 {
+  left: 23%;
+  animation: b-move 12s 0s infinite;
+}
+
+.b-image-container--3 {
+  left: 70%;
+  animation: b-move 16s 0s infinite;
+}
+
+.b-image-container--4 {
+  left: 7%;
+  animation: b-move 19s 0s infinite;
+}
+
+.b-image-container--5 {
+  left: 10%;
+  animation: b-move 17s 0s infinite;
+}
+
+.b-image-container--6 {
+  left: 15%;
+  animation: b-move 7s 0s infinite;
+}
+
+.b-image-container--7 {
+  left: 20%;
+  animation: b-move 8s 0s infinite;
+}
+
+.b-image-container--8 {
+  left: 23%;
+  animation: b-move 20s 0s infinite;
+}
+
+.b-image-container--9 {
+  left: 27%;
+  animation: b-move 17s 0s infinite;
+}
+
+.b-image-container--10 {
+  left: 37%;
+  animation: b-move 18s 0s infinite;
+}
+
+.b-image-container--11 {
+  left: 43%;
+  animation: b-move 8s 0s infinite;
+}
+
+.b-image-container--12 {
+  left: 40%;
+  animation: b-move 11s 0s infinite;
+}
+
+.b-image-container--13 {
+  left: 45%;
+  animation: b-move 12s 0s infinite;
+}
+
+.b-image-container--14 {
+  left: 49%;
+  animation: b-move 10s 0s infinite;
+}
+
+.b-image-container--15 {
+  left: 52%;
+  animation: b-move 10s 0s infinite;
+}
+
+.b-image-container--16 {
+  left: 56%;
+  animation: b-move 15s 0s infinite;
+}
+
+.b-image-container--17 {
+  left: 57%;
+  animation: b-move 9s 0s infinite;
+}
+
+.b-image-container--18 {
+  left: 64%;
+  animation: b-move 15s 0s infinite;
+}
+
+.b-image-container--19 {
+  left: 67%;
+  animation: b-move 13s 0s infinite;
+}
+
+.b-image-container--20 {
+  left: 70%;
+  animation: b-move 11s 0s infinite;
+}
+
+.b-image-container--21 {
+  left: 74%;
+  animation: b-move 10s 0s infinite;
+}
+
+.b-image-container--22 {
+  left: 78%;
+  animation: b-move 18s 0s infinite;
+}
+
+.b-image-container--23 {
+  left: 84%;
+  animation: b-move 20s 0s infinite;
+}
+
+.b-image-container--24 {
+  left: 87%;
+  animation: b-move 17s 0s infinite;
+}
+
+.b-image-container--25 {
+  left: 90%;
+  animation: b-move 16s 0s infinite;
+}
+
+.b-image-container--26 {
+  left: 93%;
+  animation: b-move 20s 0s infinite;
+}
+
+.b-image-container--27 {
+  left: 95%;
+  animation: b-move 5s 0s infinite;
+}
+
+.b-image-container--28 {
+  left: 98%;
+  animation: b-move 12s 0s infinite;
+}
+
+.b-image-container--29 {
+  left: 97%;
+  animation: b-move 11s 0s infinite;
+}
+
+.b-image-container--30 {
+  left: 3%;
+  animation: b-move 12s 3s infinite;
+}
+
+.b-image-container--31 {
+  left: 9%;
+  animation: b-move 9s 1s infinite;
+}
+
+.b-image-container--32 {
+  left: 17%;
+  animation: b-move 8s 1s infinite;
+}
+
+.b-image-container--33 {
+  left: 11%;
+  animation: b-move 10s 2s infinite;
+}
+
+.b-image-container--34 {
+  left: 26%;
+  animation: b-move 9s 0s infinite;
+}
+
+.b-image-container--35 {
+  left: 20%;
+  animation: b-move 3s 2s infinite;
+}
+
+.b-image-container--36 {
+  left: 21%;
+  animation: b-move 7s 3s infinite;
+}
+
+.b-image-container--37 {
+  left: 22%;
+  animation: b-move 2s 7s infinite;
+}
+
+.b-image-container--38 {
+  left: 23%;
+  animation: b-move 7s 9s infinite;
+}
+
+.b-image-container--39 {
+  left: 24%;
+  animation: b-move 12s 4s infinite;
+}
+
+.b-image-container--40 {
+  left: 25%;
+  animation: b-move 15s 3s infinite;
+}
+.b-image-container--41 {
+  left: 27%;
+  animation: b-move 10s 1s infinite;
+}
+
+.b-image-container--42 {
+  left: 28%;
+  animation: b-move 14s 0s infinite;
+}
+
+.b-image-container--43 {
+  left: 29%;
+  animation: b-move 10s 3s infinite;
+}
+
+.b-image-container--44 {
+  left: 30%;
+  animation: b-move 2s 1s infinite;
+}
+
+.b-image-container--45 {
+  left: 31%;
+  animation: b-move 5s 2s infinite;
+}
+
+.b-image-container--46 {
+  left: 32%;
+  animation: b-move 6s 9s infinite;
+}
+
+.b-image-container--47 {
+  left: 33%;
+  animation: b-move 4s 4s infinite;
+}
+
+.b-image-container--48 {
+  left: 34%;
+  animation: b-move 14s 9s infinite;
+}
+
+.b-image-container--49 {
+  left: 35%;
+  animation: b-move 2s 1s infinite;
+}
+
+.b-image-container--50 {
+  left: 36%;
+  animation: b-move 13s 3s infinite;
+}
+
+.b-image-container--51 {
+  left: 37%;
+  animation: b-move 3s 0s infinite;
+}
+
+.b-image-container--52 {
+  left: 38%;
+  animation: b-move 15s 1s infinite;
+}
+
+.b-image-container--53 {
+  left: 39%;
+  animation: b-move 13s 7s infinite;
+}
+
+.b-image-container--54 {
+  left: 40%;
+  animation: b-move 9s 5s infinite;
+}
+
+.b-image-container--55 {
+  left: 41%;
+  animation: b-move 2s 4s infinite;
+}
+
+.b-image-container--56 {
+  left: 42%;
+  animation: b-move 4s 1s infinite;
+}
+
+.b-image-container--57 {
+  left: 43%;
+  animation: b-move 5s 3s infinite;
+}
+
+.b-image-container--58 {
+  left: 44%;
+  animation: b-move 4s 2s infinite;
+}
+
+.b-image-container--59 {
+  left: 45%;
+  animation: b-move 10s 3s infinite;
+}
+
+.b-image-container--60 {
+  left: 46%;
+  animation: b-move 3s 6s infinite;
+}
+
+.b-image-container--61 {
+  left: 47%;
+  animation: b-move 7s 5s infinite;
+}
+
+.b-image-container--62 {
+  left: 48%;
+  animation: b-move 14s 3s infinite;
+}
+
+.b-image-container--63 {
+  left: 49%;
+  animation: b-move 10s 3s infinite;
+}
+
+.b-image-container--64 {
+  left: 50%;
+  animation: b-move 12s 0s infinite;
+}
+
+.b-image-container--65 {
+  left: 51%;
+  animation: b-move 10s 4s infinite;
+}
+
+.b-image-container--66 {
+  left: 52%;
+  animation: b-move 9s 2s infinite;
+}
+
+.b-image-container--67 {
+  left: 53%;
+  animation: b-move 12s 5s infinite;
+}
+
+.b-image-container--68 {
+  left: 54%;
+  animation: b-move 13s 3s infinite;
+}
+
+.b-image-container--69 {
+  left: 55%;
+  animation: b-move 7s 0s infinite;
+}
+
+.b-image-container--70 {
+  left: 56%;
+  animation: b-move 3s 2s infinite;
+}
+
+.b-image-container--71 {
+  left: 57%;
+  animation: b-move 6s 3s infinite;
+}
+
+.b-image-container--72 {
+  left: 58%;
+  animation: b-move 5s 5s infinite;
+}
+
+.b-image-container--73 {
+  left: 59%;
+  animation: b-move 16s 4s infinite;
+}
+
+.b-image-container--74 {
+  left: 60%;
+  animation: b-move 15s 6s infinite;
+}
+
+.b-image-container--75 {
+  left: 61%;
+  animation: b-move 15s 13s infinite;
+}
+
+.b-image-container--76 {
+  left: 79%;
+  animation: b-move 10s 7s infinite;
+}
+
+.b-image-container--77 {
+  left: 78%;
+  animation: b-move 11s 12s infinite;
+}
+
+.b-image-container--78 {
+  left: 77%;
+  animation: b-move 12s 4s infinite;
+}
+
+.b-image-container--79 {
+  left: 76%;
+  animation: b-move 14s 10s infinite;
+}
+
+.b-image-container--80 {
+  left: 75%;
+  animation: b-move 7s 12s infinite;
+}
+
+.b-image-container--81 {
+  left: 74%;
+  animation: b-move 6s 7s infinite;
+}
+
+.b-image-container--82 {
+  left: 73%;
+  animation: b-move 14s 0s infinite;
+}
+
+.b-image-container--83 {
+  left: 73%;
+  animation: b-move 6s 3s infinite;
+}
+
+.b-image-container--84 {
+  left: 72%;
+  animation: b-move 8s 6s infinite;
+}
+
+.b-image-container--85 {
+  left: 71%;
+  animation: b-move 9s 0s infinite;
+}
+
+.b-image-container--86 {
+  left: 70%;
+  animation: b-move 9s 7s infinite;
+}
+.b-image-container--87 {
+  left: 69%;
+  animation: b-move 14s 0s infinite;
+}
+
+.b-image-container--88 {
+  left: 68%;
+  animation: b-move 9s 1s infinite;
+}
+
+.b-image-container--89 {
+  left: 67%;
+  animation: b-move 12s 2s infinite;
+}
+
+.b-image-container--90 {
+  left: 66%;
+  animation: b-move 10s 3s infinite;
+}
+
+.b-image-container--91 {
+  left: 65%;
+  animation: b-move 11s 5s infinite;
+}
+
+.b-image-container--92 {
+  left: 64%;
+  animation: b-move 12s 5s infinite;
+}
+
+.b-image-container--93 {
+  left: 63%;
+  animation: b-move 10s 8s infinite;
+}
+
+.b-image-container--94 {
+  left: 62%;
+  animation: b-move 14s 3s infinite;
+}

@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mouse-cursor.png") -1 0, pointer;
+}
+
+.bump-page {
+  background-image: linear-gradient(180deg, blue, green);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* lump fall */
+/* ANNIMATION */
+.bump-container1 {
+  width: 30%;
+  height: 30%;
+  background-image: linear-gradient(180deg, blue, green);
+  position: absolute;
+  border-radius: 100px / 100px;
+  transform: rotate(90deg);
+  bottom: 0%;
+  left: 0%;
+  z-index: 2;
+  /* animation: bump-moving 9s infinite; */
+}
+
+@keyframes bump-move {
+  0% {
+    bottom: 1%;
+    right: 0%;
+  }
+
+  50% {
+    bottom: 10%;
+    right: 0%;
+  }
+
+  70% {
+    bottom: 13%;
+    right: 0%;
+  }
+
+  85% {
+    bottom: 10%;
+    right: 0%;
+  }
+
+  100% {
+    bottom: 15%;
+    right: 0%;
+  }
+
+  0% {
+    bottom: 1%;
+    right: 0%;
+  }
+
+}
+
+.bump-container1--1 {
+  left: 40%;
+  animation: bump-move 9s 0s infinite;
+}
+
+.bump-container1--2 {
+  left: 23%;
+  animation: bump-move 12s 0s infinite;
+}
+
+.bump-container1--3 {
+  left: 70%;
+  animation: bump-move 16s 0s infinite;
+}
+
+.bump-container1--4 {
+  left: 7%;
+  animation: bump-move 4s 0s infinite;
+}
+
+.bump-container1--5 {
+  left: 17%;
+  animation: bump-move 7s 0s infinite;
+}
+
+.bump-container1--6 {
+  left: 29%;
+  animation: bump-move 9s 0s infinite;
+}
+
+.bump-container1--7 {
+  left: 53%;
+  animation: bump-move 3s 0s infinite;
+}
+
+.bump-container1--8 {
+  left: 58%;
+  animation: bump-move 10s 0s infinite;
+}
+
+.bump-container1--9 {
+  left: 63%;
+  animation: bump-move 15s 0s infinite;
+}
+
+.bump-container1--10 {
+  left: 70%;
+  animation: bump-move 3s 0s infinite;
+}
+
+.bump-container1--11 {
+  left: 90%;
+  animation: bump-move 5s 0s infinite;
+}
+
+.bump-container1--12 {
+  left: 1%;
+  animation: bump-move 2s 0s infinite;
+}
+.bump-container1--13 {
+  left: 10%;
+  animation: bump-move 6s 0s infinite;
+}
+.bump-container1--14 {
+  left: 85%;
+  animation: bump-move 12s 0s infinite;
+}
+.bump-container1--15 {
+  left: 68%;
+  animation: bump-move 13s 0s infinite;
+}
+.bump-container1--16 {
+  left: 3%;
+  animation: bump-move 13s 0s infinite;
+}
+.bump-container1--17 {
+  left: 16%;
+  animation: bump-move 17s 0s infinite;
+}
+.bump-container1--18 {
+  left: 21%;
+  animation: bump-move 12s 0s infinite;
+}
+.bump-container1--19 {
+  left: 34%;
+  animation: bump-move 8s 0s infinite;
+}
+.bump-container1--20 {
+  left: 43%;
+  animation: bump-move 8s 0s infinite;
+}

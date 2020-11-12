@@ -1,0 +1,915 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mouse-cursor.png") -1 0, pointer;
+}
+
+.traffic-page {
+  background-image: linear-gradient(180deg, grey, black);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ROAD LINES START HERE */
+/*
+.lines-container1 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container2 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container3 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container4 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container5 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container6 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container7 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 60%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container8 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container9 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  z-index: 2;
+}
+
+.lines-container10 {
+  width: 1.5vw;
+  height: 4vw;
+  background-image: linear-gradient(180deg, gold, yellow);
+  position: absolute;
+  top: 90%;
+  left: 15%;
+  z-index: 2;
+}
+/* MAYBE DON'T NEED LINES -- TOO OBVIOUS */
+/* ROAD LINES END HERE */
+
+/* FIRST ROW box fall */
+/*ANNIMATION*/
+.lane-1-container1 {
+  border-radius: 30%;
+  width: 6vw;
+  height: 9vw;
+  background-image: linear-gradient(180deg, gold, red);
+  position: absolute;
+  left: 0%;
+  z-index: 2;
+  /* animation: box-moving 5s infinite; */
+}
+
+@keyframes lane-1-move {
+  0% {
+    bottom: -10vw;
+  }
+
+  15% {
+    bottom: 18vw;
+  }
+
+  28% {
+    bottom: 38vw;
+  }
+
+  40% {
+    bottom: 47vw;
+  }
+
+  50% {
+    bottom: 65vw;
+  }
+
+  85% {
+    bottom: 95vw;
+  }
+
+  100% {
+    bottom: 110vw;
+  }
+
+}
+
+.lane-1-container1--1 {
+  left: 4%;
+  bottom: -20%;
+  animation: lane-1-move 50s 0s infinite;
+}
+
+.lane-1-container1--2 {
+  left: 4%;
+  bottom: -20%;
+  animation: lane-1-move 50s 5s infinite;
+}
+
+.lane-1-container1--3 {
+  left: 3%;
+  bottom: -20%;
+  animation: lane-1-move 50s 10s infinite;
+}
+
+.lane-1-container1--4 {
+  left: 3.5%;
+  bottom: -20%;
+  animation: lane-1-move 50s 17s infinite;
+}
+
+.lane-1-container1--5 {
+  left: 4%;
+  bottom: -20%;
+  animation: lane-1-move 53s 23s infinite;
+}
+
+.lane-1-container1--6 {
+  left: 4.2%;
+  bottom: -20%;
+  animation: lane-1-move 52s 28s infinite;
+}
+
+.lane-1-container1--7 {
+  left: 3.7%;
+  bottom: -20%;
+  animation: lane-1-move 53s 33s infinite;
+}
+
+.lane-1-container1--8 {
+  left: 4%;
+  bottom: -20%;
+  animation: lane-1-move 51s 39s infinite;
+}
+
+.lane-1-container1--9 {
+  left: 4%;
+  bottom: -20%;
+  animation: lane-1-move 50s 48s infinite;
+}
+
+.lane-1-container1--10 {
+  left: 4.1%;
+  bottom: -20%;
+  animation: lane-1-move 50s 52s infinite;
+}
+
+
+/* SECOND LANE STARTS */
+.lane-2-container1 {
+  border-radius: 30%;
+  width: 6vw;
+  height: 9vw;
+  background-image: linear-gradient(180deg, green, yellow);
+  position: absolute;
+  z-index: 2;
+  /* animation: lane-2-moving infinite; */
+}
+
+@keyframes lane-2-move {
+  0% {
+    bottom: -10vw;
+  }
+
+  10% {
+    bottom: 9vw;
+  }
+
+  15% {
+    bottom: 11vw;
+  }
+
+  23% {
+    bottom: 16vw;
+  }
+
+  28% {
+    bottom: 24vw;
+  }
+
+  30% {
+    bottom: 30vw;
+  }
+
+  40% {
+    bottom: 47vw;
+  }
+
+  50% {
+    bottom: 52vw;
+  }
+
+  55% {
+    bottom: 57vw;
+  }
+
+  59% {
+    bottom: 60vw;
+  }
+
+  63% {
+    bottom: 70vw;
+  }
+
+  67% {
+    bottom: 74vw;
+  }
+
+  85% {
+    bottom: 85vw;
+  }
+
+  95% {
+    bottom: 99vw;
+  }
+
+  100% {
+    bottom: 110vw;
+  }
+}
+
+.lane-2-container1--1 {
+  left: 20%;
+  bottom: -20%;
+  animation: lane-2-move 40s 0s infinite;
+}
+
+.lane-2-container1--2 {
+  left: 20.1%;
+  bottom: -20%;
+  animation: lane-2-move 41s 6.5s infinite;
+}
+
+.lane-2-container1--3 {
+  left: 19.8%;
+  bottom: -20%;
+  animation: lane-2-move 40.4s 10s infinite;
+}
+
+.lane-2-container1--4 {
+  left: 19.5%;
+  bottom: -20%;
+  animation: lane-2-move 40s 14.5s infinite;
+}
+
+.lane-2-container1--5 {
+  left: 20%;
+  bottom: -20%;
+  animation: lane-2-move 40s 20.9s infinite;
+}
+
+.lane-2-container1--6 {
+  left: 20.2%;
+  bottom: -20%;
+  animation: lane-2-move 40.2s 27s infinite;
+}
+
+.lane-2-container1--7 {
+  left: 19.7%;
+  bottom: -20%;
+  animation: lane-2-move 40.5s 35s infinite;
+}
+
+.lane-2-container1--8 {
+  left: 20%;
+  bottom: -20%;
+  animation: lane-2-move 41s 38s infinite;
+}
+
+.lane-2-container1--9 {
+  left: 20%;
+  bottom: -20%;
+  animation: lane-2-move 40s 43s infinite;
+}
+
+.lane-2-container1--10 {
+  left: 20.1%;
+  bottom: -20%;
+  animation: lane-2-move 40.7s 50s infinite;
+}
+/* SECOND LANE ENDS */
+
+/* THIRD LANE STARTS */
+/*----------------------ADD MORE CARS---------------------------*/
+.lane-3-container1 {
+  border-radius: 30%;
+  width: 6vw;
+  height: 9vw;
+  background-image: linear-gradient(180deg, white, blue);
+  position: absolute;
+  z-index: 2;
+  /* animation: lane-3-moving infinite; */
+}
+
+@keyframes lane-3-move {
+  0% {
+    bottom: -10vw;
+  }
+
+  10% {
+    bottom: 5vw;
+  }
+
+  15% {
+    bottom: 10vw;
+  }
+
+  23% {
+    bottom: 13vw;
+  }
+
+  28% {
+    bottom: 18vw;
+  }
+
+  30% {
+    bottom: 24vw;
+  }
+
+  40% {
+    bottom: 37vw;
+  }
+
+  50% {
+    bottom: 45vw;
+  }
+
+  55% {
+    bottom: 49vw;
+  }
+
+  59% {
+    bottom: 53vw;
+  }
+
+  63% {
+    bottom: 60vw;
+  }
+
+  67% {
+    bottom: 69vw;
+  }
+
+  85% {
+    bottom: 75vw;
+  }
+
+  95% {
+    bottom: 85vw;
+  }
+
+  100% {
+    bottom: 110vw;
+  }
+}
+
+.lane-3-container1--1 {
+  left: 36%;
+  bottom: -20%;
+  animation: lane-3-move 70s 0s infinite;
+}
+
+.lane-3-container1--2 {
+  left: 36%;
+  bottom: -20%;
+  animation: lane-3-move 71s 10s infinite;
+}
+
+.lane-3-container1--3 {
+  left: 37%;
+  bottom: -20%;
+  animation: lane-3-move 70.4s 24s infinite;
+}
+
+.lane-3-container1--4 {
+  left: 36.5%;
+  bottom: -20%;
+  animation: lane-3-move 70s 44s infinite;
+}
+
+.lane-3-container1--5 {
+  left: 36%;
+  bottom: -20%;
+  animation: lane-3-move 70s 50s infinite;
+}
+
+.lane-3-container1--6 {
+  left: 36.2%;
+  bottom: -20%;
+  animation: lane-3-move 70.2s 58s infinite;
+}
+
+.lane-3-container1--7 {
+  left: 36.7%;
+  bottom: -20%;
+  animation: lane-3-move 70.5s 64s infinite;
+}
+
+.lane-3-container1--8 {
+  left: 36%;
+  bottom: -20%;
+  animation: lane-3-move 71s 81s infinite;
+}
+
+.lane-3-container1--9 {
+  left: 36%;
+  bottom: -20%;
+  animation: lane-3-move 70s 87s infinite;
+}
+
+.lane-3-container1--10 {
+  left: 36.1%;
+  bottom: -20%;
+  animation: lane-3-move 70.7s 95s infinite;
+}
+/* THIRD LANE ENDS */
+
+
+/*----------------------ADD MORE CARS---------------------------*/
+/* LANE 5 LANE STARTS */
+.lane-4-container1 {
+  border-radius: 30%;
+  width: 6vw;
+  height: 9vw;
+  background-image: linear-gradient(180deg, red, #EE82EE);
+  position: absolute;
+  z-index: 2;
+  /* animation: lane-5-moving infinite; */
+}
+
+@keyframes lane-4-move {
+  0% {
+    top: -9vw;
+  }
+
+  10% {
+    top: 5vw;
+  }
+
+  15% {
+    top: 10vw;
+  }
+
+  23% {
+    top: 13vw;
+  }
+
+  28% {
+    top: 18vw;
+  }
+
+  30% {
+    top: 24vw;
+  }
+
+  40% {
+    top: 37vw;
+  }
+
+  50% {
+    top: 45vw;
+  }
+
+  55% {
+    top: 49vw;
+  }
+
+  59% {
+    top: 53vw;
+  }
+
+  63% {
+    top: 60vw;
+  }
+
+  67% {
+    top: 69vw;
+  }
+
+  85% {
+    top: 75vw;
+  }
+
+  95% {
+    top: 85vw;
+  }
+
+  100% {
+    top: 110vw;
+  }
+}
+
+.lane-4-container1--1 {
+  left: 51%;
+  top: -22%;
+  animation: lane-4-move 71s 0s infinite;
+}
+
+.lane-4-container1--2 {
+  left: 52%;
+  top: -22%;
+  animation: lane-4-move 72s 18s infinite;
+}
+
+.lane-4-container1--3 {
+  left: 52%;
+  top: -22%;
+  animation: lane-4-move 71.4s 27s infinite;
+}
+
+.lane-4-container1--4 {
+  left: 51.5%;
+  top: -22%;
+  animation: lane-4-move 71s 39s infinite;
+}
+
+.lane-4-container1--5 {
+  left: 52%;
+  top: -22%;
+  animation: lane-4-move 71s 49s infinite;
+}
+
+.lane-4-container1--6 {
+  left: 66.2%;
+  top: -22%;
+  animation: lane-4-move 71.2s 58s infinite;
+}
+
+.lane-4-container1--7 {
+  left: 52.7%;
+  top: -22%;
+  animation: lane-4-move 71.5s 68s infinite;
+}
+
+.lane-4-container1--8 {
+  left: 51%;
+  top: -22%;
+  animation: lane-4-move 72s 75s infinite;
+}
+
+.lane-4-container1--9 {
+  left: 52%;
+  top: -22%;
+  animation: lane-4-move 71s 87s infinite;
+}
+
+.lane-4-container1--10 {
+  left: 51.1%;
+  top: -22%;
+  animation: lane-4-move 71.7s 105s infinite;
+}
+/* LANE 4 LANE ENDS */
+
+/* LANE 5 LANE STARTS */
+.lane-5-container1 {
+  border-radius: 30%;
+  width: 6vw;
+  height: 9vw;
+  background-image: linear-gradient(180deg, purple, navy);
+  position: absolute;
+  z-index: 2;
+  /* animation: lane-5-moving infinite; */
+}
+
+@keyframes lane-5-move {
+  0% {
+    top: -9vw;
+  }
+
+  10% {
+    top: 5vw;
+  }
+
+  15% {
+    top: 10vw;
+  }
+
+  23% {
+    top: 13vw;
+  }
+
+  28% {
+    top: 18vw;
+  }
+
+  30% {
+    top: 24vw;
+  }
+
+  40% {
+    top: 37vw;
+  }
+
+  50% {
+    top: 45vw;
+  }
+
+  55% {
+    top: 49vw;
+  }
+
+  59% {
+    top: 53vw;
+  }
+
+  63% {
+    top: 60vw;
+  }
+
+  67% {
+    top: 69vw;
+  }
+
+  85% {
+    top: 75vw;
+  }
+
+  95% {
+    top: 85vw;
+  }
+
+  100% {
+    top: 110vw;
+  }
+}
+
+.lane-5-container1--1 {
+  left: 67%;
+  top: -22%;
+  animation: lane-5-move 71s 0s infinite;
+}
+
+.lane-5-container1--2 {
+  left: 66%;
+  top: -22%;
+  animation: lane-5-move 72s 18s infinite;
+}
+
+.lane-5-container1--3 {
+  left: 67%;
+  top: -22%;
+  animation: lane-5-move 71.4s 27s infinite;
+}
+
+.lane-5-container1--4 {
+  left: 66.5%;
+  top: -22%;
+  animation: lane-5-move 71s 39s infinite;
+}
+
+.lane-5-container1--5 {
+  left: 67%;
+  top: -22%;
+  animation: lane-5-move 71s 49s infinite;
+}
+
+.lane-5-container1--6 {
+  left: 66.2%;
+  top: -22%;
+  animation: lane-5-move 71.2s 58s infinite;
+}
+
+.lane-5-container1--7 {
+  left: 67.7%;
+  top: -22%;
+  animation: lane-5-move 71.5s 68s infinite;
+}
+
+.lane-5-container1--8 {
+  left: 66%;
+  top: -22%;
+  animation: lane-5-move 72s 75s infinite;
+}
+
+.lane-5-container1--9 {
+  left: 66%;
+  top: -22%;
+  animation: lane-5-move 71s 87s infinite;
+}
+
+.lane-5-container1--10 {
+  left: 67.1%;
+  top: -22%;
+  animation: lane-5-move 71.7s 105s infinite;
+}
+/* LANE 5 LANE ENDS */
+
+
+/* LANE 6 LANE STARTS */
+.lane-6-container1 {
+  border-radius: 30%;
+  width: 6vw;
+  height: 9vw;
+  background-image: linear-gradient(180deg, yellow, orange);
+  position: absolute;
+  z-index: 2;
+  /* animation: lane-4-moving infinite; */
+}
+
+@keyframes lane-6-move {
+  0% {
+    top: -9vw;
+  }
+
+  10% {
+    top: 5vw;
+  }
+
+  15% {
+    top: 10vw;
+  }
+
+  23% {
+    top: 13vw;
+  }
+
+  28% {
+    top: 18vw;
+  }
+
+  30% {
+    top: 24vw;
+  }
+
+  40% {
+    top: 37vw;
+  }
+
+  50% {
+    top: 45vw;
+  }
+
+  55% {
+    top: 49vw;
+  }
+
+  59% {
+    top: 53vw;
+  }
+
+  63% {
+    top: 60vw;
+  }
+
+  67% {
+    top: 69vw;
+  }
+
+  85% {
+    top: 75vw;
+  }
+
+  95% {
+    top: 85vw;
+  }
+
+  100% {
+    top: 110vw;
+  }
+}
+
+.lane-6-container1--1 {
+  left: 87%;
+  top: -22%;
+  animation: lane-6-move 71s 0s infinite;
+}
+
+.lane-6-container1--2 {
+  left: 86%;
+  top: -22%;
+  animation: lane-6-move 72s 18s infinite;
+}
+
+.lane-6-container1--3 {
+  left: 87%;
+  top: -22%;
+  animation: lane-6-move 71.4s 27s infinite;
+}
+
+.lane-6-container1--4 {
+  left: 86.5%;
+  top: -22%;
+  animation: lane-6-move 71s 39s infinite;
+}
+
+.lane-6-container1--5 {
+  left: 87%;
+  top: -22%;
+  animation: lane-6-move 71s 49s infinite;
+}
+
+.lane-6-container1--6 {
+  left: 86.2%;
+  top: -22%;
+  animation: lane-6-move 71.2s 58s infinite;
+}
+
+.lane-6-container1--7 {
+  left: 87.7%;
+  top: -22%;
+  animation: lane-6-move 71.5s 68s infinite;
+}
+
+.lane-6-container1--8 {
+  left: 86%;
+  top: -22%;
+  animation: lane-6-move 72s 75s infinite;
+}
+
+.lane-6-container1--9 {
+  left: 86%;
+  top: -22%;
+  animation: lane-6-move 71s 87s infinite;
+}
+
+.lane-6-container1--10 {
+  left: 87.1%;
+  top: -22%;
+  animation: lane-6-move 71.7s 105s infinite;
+}
+/* LANE 6 LANE ENDS */

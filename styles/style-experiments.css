@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+	overflow-y: hidden;
+}
+
+body {
+  font-family: 'Menlo Regular';
+  background-color: #FFFAFA;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mousie.png") -1 0, pointer;
+}
+
+@font-face {
+  font-family: 'Menlo Regular';
+  src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
+}
+
+.activities-page {
+  position: absolute;
+  height:100vh;
+  width: 100vw;
+  top:0;
+  margin:0;
+  padding:0;
+  float:centre;
+}
+
+/*CREDIT STYLE*/
+.new-environments-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 5vw;
+  width: 40.4vw;
+  left: 2%;
+  top: 3%;
+}
+
+.new-environments {
+  text-decoration: none;
+  color: #0000FF;
+  margin: .1em;
+  padding: 0;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  text-align: centre;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.new-environments:hover {
+  color: #DC143C;
+  text-decoration: none;
+  border-bottom: 3px solid red;
+}
+
+.ab-bounce-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 8%;
+  width: 29.5%;
+  left: 12.5%;
+  top: 20%;
+}
+
+.ab-bounce {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.ab-bounce:hover {
+  color: #DC143C;
+}
+
+
+
+/* REST OF SITES */
+.ab-b-boxes-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 25.5%;
+}
+
+.ab-b-boxes {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .ab-b-boxes:hover {
+    color: #DC143C;
+}
+
+.floating-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 36.5%;
+}
+
+.floating {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .floating:hover {
+    color: #DC143C;
+}
+
+.jump-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 31%;
+}
+
+.jump {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .jump:hover {
+    color: #DC143C;
+}
+
+/* HOVER DROP MENU STYLING for bounce fall-------------STARTS */
+.bounce-fall-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.1%;
+  top: 42%;
+}
+
+.bounce-fall {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+.bounce-fall:hover {
+  color: #DC143C;
+}
+
+.dropbtn {
+  font-family: 'Menlo Regular';
+  background-color: #FFFAFA;
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFFAFA;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: 'Menlo Regular';
+  font-weight: bold;
+  color: blue;
+  font-size: 15px;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #FFFAFA;}
+
+.dropdown-content a:hover {color: red;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #FFFAFA;}
+
+.dropdown:hover .dropbtn {color: blue;}
+/* HOVER DROP MENU STYLING for bounce fall -------------ENDS */

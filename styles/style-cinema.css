@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mousie.png") -1 0, pointer;
+}
+
+.cinema-page {
+  background-image: linear-gradient(black, #800000, black, #800000);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* SEATNG STARTS NOW */
+.seating-container {
+  height: 40vw;
+  width: 80vw;
+  top: 0%;
+  left: 10%;
+  float: left;
+  display: block;
+  position: relative;
+  background-color: #8B0000;
+  z-index: 9999;
+}
+
+.seats-container {
+  height: 8%;
+  width: 7%;
+  bottom: 5%;
+  left: 4%;
+  float: left;
+  display: block;
+  position: relative;
+  z-index: -2;
+}
+
+.seats-1{
+  background-image: linear-gradient(red, #A52A2A, #8B0000, black);
+  height: 5vw;
+  width: 5vw;
+  left: 0%;
+  bottom: 0%;
+  position: absolute;
+  transform: translate(-50%,-50%) rotate(90deg);
+  border-radius: 100% / 20%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.seats-2-container {
+  height: 8%;
+  width: 7%;
+  bottom: 5%;
+  left: 2%;
+  float: left;
+  display: block;
+  position: relative;
+  z-index: -2;
+}
+
+.seats-2{
+  background-image: linear-gradient(black, darkred, #A52A2A, #8B0000);
+  height: 5vw;
+  width: 5vw;
+  left: 0%;
+  bottom: 0%;
+  position: absolute;
+  transform: translate(-50%,-50%) rotate(90deg);
+  border-radius: 100% / 20%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.stairs-container {
+  height: 50%;
+  width: 14%;
+  bottom: 5%;
+  left: 0%;
+  float: left;
+  display: block;
+  position: relative;
+  background-color: grey;
+  z-index: -2;
+}
+
+.stairs{
+  background-image: linear-gradient(black, #8B0000);
+  height: 50vw;
+  width: 14vw;
+  left: 0%;
+  bottom: 0%;
+  position: absolute;
+  transform: translate(-50%,-50%) rotate(90deg);
+  overflow: hidden;
+  z-index: -2;
+}
+
+/* GLOWING LIGHTS STARTING HERE */
+/* GLOWING LIGHTS STARTING HERE */
+.glow-1-container {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.glow-1 {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  index: 999;
+  background-color: #fff;
+  box-shadow:0 0 80px 30px #fff,  /* inner white */
+             0 0 100px 60px #B22222, /* middle magenta */
+             0 0 140px 90px #F0E68C; /* outer cyan */
+}
+
+.glow-1:hover {
+  transition: ease 2s 0s;
+  background-color: black;
+  box-shadow:0 0 80px 60px black,  /* inner white */
+             0 0 100px 60px black, /* middle magenta */
+             0 0 140px 90px grey; /* outer cyan */
+}
+
+.glow-2-container {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.glow-2 {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  index: 999;
+  background-color: #fff;
+  box-shadow:0 0 80px 30px #fff,  /* inner white */
+             0 0 100px 60px #B22222, /* middle magenta */
+             0 0 140px 90px #F0E68C; /* outer cyan */
+}
+
+.glow-2:hover {
+  transition: ease 2s 0s;
+  background-color: black;
+  box-shadow:0 0 80px 60px black,  /* inner white */
+             0 0 100px 60px black, /* middle magenta */
+             0 0 140px 90px grey; /* outer cyan */
+}
+
+.glow-3-container {
+  position: absolute;
+  top: 95%;
+  left: 2%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.glow-3 {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  index: 999;
+  background-color: #fff;
+  box-shadow:0 0 80px 30px #fff,  /* inner white */
+             0 0 100px 60px #B22222, /* middle magenta */
+             0 0 140px 90px #F0E68C; /* outer cyan */
+}
+
+.glow-3:hover {
+  transition: ease 2s 0s;
+  background-color: black;
+  box-shadow:0 0 80px 60px black,  /* inner white */
+             0 0 100px 60px black, /* middle magenta */
+             0 0 140px 90px grey; /* outer cyan */
+}
+
+
+/* GLOWING LIGHTS LEFT HAND SIDE------STARTING HERE */
+.glow-4-container {
+  position: absolute;
+  top: 10%;
+  left: 98%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.glow-4 {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  index: 999;
+  background-color: #fff;
+  box-shadow:0 0 80px 30px #fff,  /* inner white */
+             0 0 100px 60px #B22222, /* middle magenta */
+             0 0 140px 90px #F0E68C; /* outer cyan */
+}
+
+.glow-4:hover {
+  transition: ease 2s 0s;
+  background-color: black;
+  box-shadow:0 0 80px 60px black,  /* inner white */
+             0 0 100px 60px black, /* middle magenta */
+             0 0 140px 90px grey; /* outer cyan */
+}
+
+.glow-5-container {
+  position: absolute;
+  top: 50%;
+  left: 98%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.glow-5 {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  index: 999;
+  background-color: #fff;
+  box-shadow:0 0 80px 30px #fff,  /* inner white */
+             0 0 100px 60px #B22222, /* middle magenta */
+             0 0 140px 90px #F0E68C; /* outer cyan */
+}
+
+.glow-5:hover {
+  transition: ease 2s 0s;
+  background-color: black;
+  box-shadow:0 0 80px 60px black,  /* inner white */
+             0 0 100px 60px black, /* middle magenta */
+             0 0 140px 90px grey; /* outer cyan */
+}
+
+.glow-6-container {
+  position: absolute;
+  top: 95%;
+  left: 98%;
+  width: 2vw;
+  height: 2vw;
+}
+
+.glow-6 {
+  position: relative;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 50%;
+  index: 999;
+  background-color: #fff;
+  box-shadow:0 0 80px 30px #fff,  /* inner white */
+             0 0 100px 60px #B22222, /* middle magenta */
+             0 0 140px 90px #F0E68C; /* outer cyan */
+}
+
+.glow-6:hover {
+  transition: ease 2s 0s;
+  background-color: black;
+  box-shadow:0 0 80px 60px black,  /* inner white */
+             0 0 100px 60px black, /* middle magenta */
+             0 0 140px 90px grey; /* outer cyan */
+}
+
+
+/* STAGE OPENING AND CLOSING ------START HERE */
+.screen{
+  background: black;
+  height: 20vw;
+  width: 30vw;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  border-radius: 100%, 50%;
+  border: 10px groove grey;
+  overflow: hidden;
+}
+
+/* SEATS END
+----------------copy sequence from 'screen share' to get multiple in a box / rox */
+
+
+/*EDITING SUN STARTS*/
+/* the svg element */
+.sun-container {
+  position: absolute;
+  top: -100%;
+  right: -125%;
+}
+
+.svg-sun{
+  width: 100vw;
+  height: 100vw;
+  position: relative;
+
+-webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
+}
+
+/* the circle element in the svg itself */
+#sun{
+  stroke-width:0;
+  stroke-dasharray:20;
+  stroke-dashoffset:70;
+}
+
+/* animation for the sun glowing effect */
+@-webkit-keyframes sun-glow {
+	0% { fill: #00008B; stroke:#00008B;}
+	50% { fill: #00FFFF; stroke:#00FFFF;}
+	100% { fill: #4B0082; stroke:#4B0082;}
+}
+@-moz-keyframes sun-glow {
+	0% { fill: #00008B; stroke:#00008B;}
+	50% { fill: #00FFFF; stroke:#800000;}
+	100% { fill: #4B0082; stroke:#4B0082;}
+}
+@-o-keyframes sun-glow {
+	0% { fill: #800000; stroke:#00008B;}
+	50% { fill: #00FFFF; stroke:#00FFFF;}
+	100% { fill: #4B0082; stroke:#4B0082;}
+}
+@-ms-keyframes sun-glow {
+	0% { fill: #4B0082; stroke:#00008B;}
+	50% { fill: #00FFFF; stroke:#00FFFF;}
+	100% { fill: #0000CD; stroke:#4B0082;}
+}
+@keyframes sun-glow {
+	0% { fill: #00008B; stroke:#00008B;}
+	20% { fill: #800000; stroke:#00FFFF;}
+	40% { fill: #800000; stroke:#0000CD;}
+  80% { fill: #0000CD; stroke:#0000CD;}
+  100% { fill: #00008B; stroke:#0000CD;}
+}
+
+/* start spin animation */
+@-webkit-keyframes spin{
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spin{
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes spin{
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spin{
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+@keyframes spin{
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* ROTATING SUN ENDS */

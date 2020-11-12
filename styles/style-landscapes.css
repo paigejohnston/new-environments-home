@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+	overflow-y: hidden;
+}
+
+body {
+  font-family: 'Menlo Regular';
+  background-color: #FFFAFA;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mousie.png") -1 0, pointer;
+}
+
+@font-face {
+  font-family: 'Menlo Regular';
+  src: local('Menlo Regular'), url('Menlo-Regular.woff') format('woff');
+}
+
+.landscapes-page {
+  position: absolute;
+  height:100vh;
+  width: 100vw;
+  top:0;
+  margin:0;
+  padding:0;
+  float:centre;
+}
+
+/*CREDIT STYLE*/
+.new-environments-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 5vw;
+  width: 40.4vw;
+  left: 2%;
+  top: 3%;
+}
+
+.new-environments {
+  text-decoration: none;
+  color: #0000FF;
+  margin: .1em;
+  padding: 0;
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  text-align: centre;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.new-environments:hover {
+  color: #DC143C;
+  text-decoration: none;
+  border-bottom: 3px solid red;
+}
+
+.sun-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 20%;
+}
+
+.sun {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .sun:hover {
+    color: #DC143C;
+}
+
+.sunset-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 25.5%;
+}
+
+.sunset {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .sunset:hover {
+    color: #DC143C;
+}
+
+.winter-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 31%;
+}
+
+.winter {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .winter:hover {
+    color: #DC143C;
+}
+
+.sky-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 36.5%;
+}
+
+.sky {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .sky:hover {
+    color: #DC143C;
+}
+
+.float-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 47.5%;
+}
+
+.float {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .float:hover {
+    color: #DC143C;
+}
+
+.waves-container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 1.5vw;
+  width: 20vw;
+  left: 12.5%;
+  top: 42%;
+}
+
+.waves {
+  text-decoration: none;
+  color: #0000FF;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  font-weight: bold;
+}
+
+  .waves:hover {
+    color: #DC143C;
+}

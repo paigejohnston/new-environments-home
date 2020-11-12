@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mousie.png") -1 0, pointer;
+}
+
+.screen-share-page {
+  background-image: linear-gradient(180deg, black, blue);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.eyes-container {
+  height: 8%;
+  width: 7%;
+  top: 5%;
+  left: 4.5%;
+  /*background: white;*/
+  float: left;
+  display: block;
+  position: relative;
+}
+
+/* EYES BLINKING #1 -----START HERE */
+.eye-1{
+  background:white;
+  height:5vw;
+  width:5vw;
+  position:absolute;
+  transform:translate(-50%,-50%) rotate(45deg);
+  border-radius: 75% 0;
+  overflow: hidden;
+
+}
+/*
+.eye-2{
+  background:white;
+  height:5vw;
+  width:5vw;
+  position:absolute;
+  top:10%;
+  left:10%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  border-radius: 75% 0;
+  overflow: hidden;
+}
+
+.eye-3{
+  background:white;
+  height:5vw;
+  width:5vw;
+  position:absolute;
+  top:10%;
+  left:17%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  border-radius: 75% 0;
+  overflow: hidden;
+}
+
+.eye-4{
+  background:white;
+  height:5vw;
+  width:5vw;
+  position:absolute;
+  top:10%;
+  left:24%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  border-radius: 75% 0;
+  overflow: hidden;
+}
+*/
+.ball{
+  width:3.5vw;
+  height:3.5vw;
+  background-color: black;
+  border-radius: 50%;
+  border: 3pt solid blue;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+.shut{
+  height:110%;
+  width:200%;
+  top:-30%;
+  left:-30%;
+  position:absolute;
+  transform:translate(-50%,-50%) rotate(-45deg);
+  z-index:999;
+}
+
+.shut span{
+  display:block;
+  top:0%;
+  width:100%;
+  height:200%;
+  background: blue;
+  border-radius: 0 0 60% 60%;
+  transition:0.4s all;
+}
+
+.eye-1:hover >.shut span ,
+.eye-2:hover >.shut span ,
+.eye-3:hover >.shut span ,
+.eye-4:hover >.shut span {
+  height:100%;
+}

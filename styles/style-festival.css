@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mousie.png") -1 0, pointer;
+}
+
+.festival-page {
+  background-image: linear-gradient(navy, purple, navy, black);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* GLOWING LIGHTS STARTING HERE */
+/* the svg element */
+.light-container {
+  position: absolute;
+  top: 30%;
+  left: 34%;
+  width: 5vw;
+  height: 5vw;
+  z-index: 9999;
+}
+
+.light-container-1 {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  width: 5vw;
+  height: 5vw;
+  z-index: 9999;
+}
+
+.light-container-2 {
+  position: absolute;
+  top: 30%;
+  left: 43%;
+  width: 5vw;
+  height: 5vw;
+  z-index: 9999;
+}
+
+.light-container-3 {
+  position: absolute;
+  top: 30%;
+  left: 58%;
+  width: 5vw;
+  height: 5vw;
+  z-index: 9999;
+}
+
+.light-container-4 {
+  position: absolute;
+  top: 30%;
+  left: 63%;
+  width: 5vw;
+  height: 5vw;
+  z-index: 9999;
+}
+
+.light-container-5 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 5vw;
+  height: 5vw;
+  z-index: 9999;
+}
+
+.svg-sun{
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:0 0 10px 30px red,  /* inner white */
+             0 0 50px 60px #0000FF, /* middle magenta */
+             0 0 10px 50px #EE82EE; /* outer cyan */
+
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: 0% 0%;
+  -o-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin:50% 50%;
+
+-webkit-animation: spin 5s linear infinite, sun-glow 3s 0s linear infinite;
+-moz-animation: spin 5s linear infinite, sun-glow 3s 0s linear infinite;
+-o-animation:spin 5s linear infinite, sun-glow 3s 0s linear infinite;
+-ms-animation: spin 5s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+animation: spin 5s linear infinite,sun-glow 3s 0s linear infinite;
+}
+
+/* the circle element in the svg itself */
+#sun{
+  stroke-width:0;
+  stroke-dasharray:80;
+  stroke-dashoffset:2;
+}
+
+/* animation for the sun glowing effect */
+@-webkit-keyframes sun-glow {
+	0% { fill: #191970; stroke:#191970;}
+	50% { fill: #e67e22; stroke:#e67e22;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-moz-keyframes sun-glow {
+	0% { fill: #191970; stroke:#191970;}
+	50% { fill: #e67e22; stroke:#e67e22;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-o-keyframes sun-glow {
+	0% { fill: #f1c40f; stroke:#191970;}
+	50% { fill: #e67e22; stroke:#e67e22;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@-ms-keyframes sun-glow {
+	0% { fill: #f1c40f; stroke:#191970;}
+	50% { fill: #e67e22; stroke:#e67e22;}
+	100% { fill: #f1c40f; stroke:#f1c40f;}
+}
+@keyframes sun-glow {
+	0% { fill: #191970; stroke:#191970;}
+	20% { fill: #6A5ACD; stroke:#e67e22;}
+	40% { fill: #800080; stroke:#f1c40f;}
+  80% { fill: #C71585; stroke:#f1c40f;}
+  100% { fill: #191970; stroke:#f1c40f;}
+}
+
+/* start spin animation */
+@-webkit-keyframes spin{
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spin{
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes spin{
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spin{
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+@keyframes spin{
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* ROTATING SUN ENDS */
+
+
+/* DANCERS STARTING HERE */
+/* ANNIMATION */
+.dancers-container1 {
+  width: 6vw;
+  height: 9vw;
+  background-image: radial-gradient(grey, black, grey);
+  position: absolute;
+  border-radius: 100px / 100px;
+  transform: rotate(180deg);
+  bottom: 0%;
+  left: 0%;
+  z-index: 2;
+  /* animation: dancers-moving 9s infinite; */
+}
+
+@keyframes dancers-move {
+  0% {
+    bottom: 10%;
+    right: 0%;
+  }
+
+
+  100% {
+    bottom: 15%;
+    right: 0%;
+  }
+}
+
+.dancers-container1--1 {
+  left: 52%;
+  animation: dancers-move 1.1s 0s infinite;
+}
+
+.dancers-container1--2 {
+  left: 55.3%;
+  animation: dancers-move 1s 0s infinite;
+}
+
+.dancers-container1--3 {
+  left: 55%;
+  animation: dancers-move 1.2s 0s infinite;
+}
+
+.dancers-container1--4 {
+  left: 57%;
+  animation: dancers-move 1s 0s infinite;
+}
+
+.dancers-container1--5 {
+  left: 59.5%;
+  animation: dancers-move 1.5s 0s infinite;
+}
+
+.dancers-container1--6 {
+  left: 59%;
+  animation: dancers-move 1.2s 0s infinite;
+}
+
+.dancers-container1--7 {
+  left: 66%;
+  animation: dancers-move 1.4s 0s infinite;
+}
+
+.dancers-container1--8 {
+  left: 65%;
+  animation: dancers-move 1.2s 0s infinite;
+}
+
+.dancers-container1--9 {
+  left: 67%;
+  animation: dancers-move 1.1s 0s infinite;
+}
+
+.dancers-container1--10 {
+  left: 68%;
+  animation: dancers-move 1.3s 0s infinite;
+}
+
+.dancers-container1--11 {
+  left: 70%;
+  animation: dancers-move 1.5s 0s infinite;
+}
+
+.dancers-container1--12 {
+  left: 71%;
+  animation: dancers-move 1.3s 0s infinite;
+}
+
+.dancers-container1--13 {
+  left: 73%;
+  animation: dancers-move 1.1s 0s infinite;
+}
+
+.dancers-container1--14 {
+  left: 74%;
+  animation: dancers-move 1.4s 0s infinite;
+}
+
+.dancers-container1--15 {
+  left: 76%;
+  animation: dancers-move 1.1s 0s infinite;
+}
+
+.dancers-container1--16 {
+  left: 78%;
+  animation: dancers-move 1s 0s infinite;
+}
+
+.dancers-container1--17 {
+  left: 82%;
+  animation: dancers-move 1.4s 0s infinite;
+}
+
+.dancers-container1--18 {
+  left: 85%;
+  animation: dancers-move 1.3s 0s infinite;
+}
+
+.dancers-container1--19 {
+  left: 87%;
+  animation: dancers-move 1.1s 0s infinite;
+}
+
+.dancers-container1--20 {
+  left: 91%;
+  animation: dancers-move 1.2s 0s infinite;
+}
+
+.dancers-container1--21 {
+  left: 50%;
+  animation: dancers-move 1.5s 0s infinite;
+}
+.dancers-container1--22 {
+  left: 48%;
+  animation: dancers-move 1s 0s infinite;
+}
+.dancers-container1--23 {
+  left: 45%;
+  animation: dancers-move 1.1s 0s infinite;
+}
+.dancers-container1--24 {
+  left: 43%;
+  animation: dancers-move 1s 0s infinite;
+}
+.dancers-container1--25 {
+  left: 42.2%;
+  animation: dancers-move 1.2s 0s infinite;
+}
+.dancers-container1--26 {
+  left: 35%;
+  animation: dancers-move 1s 0s infinite;
+}
+.dancers-container1--27 {
+  left: 37%;
+  animation: dancers-move 1.5s 0s infinite;
+}
+.dancers-container1--28 {
+  left: 20%;
+  animation: dancers-move 1.7s 0s infinite;
+}
+.dancers-container1--29 {
+  left: 25%;
+  animation: dancers-move 1s 0s infinite;
+}
+.dancers-container1--30 {
+  left: 23%;
+  animation: dancers-move 1.1s 0s infinite;
+}
+.dancers-container1--31 {
+  left: 17%;
+  animation: dancers-move 1.3s 0s infinite;
+}
+.dancers-container1--32 {
+  left: 17.5%;
+  animation: dancers-move 1.6s 0s infinite;
+}
+.dancers-container1--33 {
+  left: 12%;
+  animation: dancers-move 1.7s 0s infinite;
+}
+.dancers-container1--34 {
+  left: 9%;
+  animation: dancers-move 2s 0s infinite;
+}
+.dancers-container1--35 {
+  left: 7%;
+  animation: dancers-move 1.4s 0s infinite;
+}
+
+/* DANCERS END HERE */
+
+
+
+/* STAGE OPENING AND CLOSING ------START HERE */
+.stage{
+  background: black;
+  height: 20vw;
+  width: 30vw;
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  border-radius: 100%, 50%;
+  border: 10px groove navy;
+  overflow: hidden;
+}
+
+.stage-top{
+  background-image: radial-gradient(navy, red, blue, purple);
+  height: 15vw;
+  width: 100vw;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-radius: 100%, 50%;
+  overflow: hidden;
+}
+
+.stage-top:hover{
+  background-image: radial-gradient(blue, gold, #FF00FF, purple);
+}
+
+.speaker-1{
+  background: black;
+  height: 15vw;
+  width: 7vw;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  border-radius: 100%, 50%;
+  border: 10px groove navy;
+  overflow:hidden;
+}
+
+.speaker-2{
+  background:black;
+  height: 15vw;
+  width: 7vw;
+  position: absolute;
+  top: 40%;
+  left: 64%;
+  border-radius: 100%, 50%;
+  border: 10px groove navy;
+  overflow:hidden;
+}

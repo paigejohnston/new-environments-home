@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mouse-cursor.png") -1 0, pointer;
+}
+
+.aw-page {
+  background-image: linear-gradient(to right, LavenderBlush, Snow);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*SECOND BOUNCEY BALL*/
+/*ANNIMATION*/
+.aw-bounce-container2 {
+  border-radius: 100%;
+  width: 20vw;
+  height: 20vw;
+  background-image: linear-gradient(180deg, GhostWhite, AliceBlue);
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+  z-index: 2;
+  /* animation: box-moving 5s infinite; */
+}
+
+@keyframes aw-bounce-move2 {
+  0% {
+    top: 30%;
+    left: 0%;
+  }
+
+  25% {
+    bottom: 0%;
+    left: 40%;
+  }
+
+  50% {
+    top: 0%;
+    left: 75%;
+  }
+
+  75% {
+    top: 30%;
+    left: 0%;
+  }
+
+  100% {
+    top: 60%;
+    left: 40%;
+  }
+}
+
+.aw-bounce-container2--1 {
+  left: 60%;
+  animation: aw-bounce-move2 8s 0s infinite;
+}
+
+.aw-bounce-container2--2 {
+  left: 60%;
+  animation: aw-bounce-move2 4s 0s infinite;
+}
+
+.aw-bounce-container2--3 {
+  left: 40%;
+  animation: aw-bounce-move2 10s 0s infinite;
+}
+
+.aw-bounce-container2--4 {
+  left: 40%;
+  animation: aw-bounce-move2 6s 0s infinite;
+}
+
+.aw-bounce-container2--5 {
+  left: 20%;
+  animation: aw-bounce-move2 12s 0s infinite;
+}
+
+.aw-bounce-container2--6 {
+  left: 20%;
+  animation: aw-bounce-move2 8s 0s infinite;
+}
+
+.aw-bounce-container2--7 {
+  left: 0%;
+  animation: aw-bounce-move2 14s 0s infinite;
+}
+
+.aw-bounce-container2--8 {
+  left: 0%;
+  animation: aw-bounce-move2 10s 0s infinite;
+}
+
+.aw-bounce-container2--9 {
+  left: 80%;
+  animation: aw-bounce-move2 6s 0s infinite;
+}
+
+.aw-bounce-container2--10 {
+  left: 80%;
+  animation: aw-bounce-move2 2s 0s infinite;
+}
+
+/*'THIRD' (second) BOUNCEY BALL*/
+/*ANNIMATION*/
+.aw-bounce-container3 {
+  border-radius: 100%;
+  width: 20vw;
+  height: 20vw;
+  background-image: linear-gradient(180deg, Azure, MintCream);
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 2;
+  /* animation: box-moving 5s infinite; */
+}
+
+@keyframes aw-bounce-move {
+  0% {
+    top: 30%;
+    right: 0%;
+  }
+
+  25% {
+    bottom: 0%;
+    right: 40%;
+  }
+
+  50% {
+    top: 0%;
+    right: 75%
+  }
+
+  75% {
+    top: 30%;
+    right: 0%;
+  }
+
+  100% {
+    top: 60%;
+    right: 40%;
+  }
+}
+
+.aw-bounce-container3--1 {
+  left: 60%;
+  animation: aw-bounce-move 8s 0s infinite;
+}
+
+.aw-bounce-container3--2 {
+  left: 60%;
+  animation: aw-bounce-move 4s 0s infinite;
+}
+
+.aw-bounce-container3--3 {
+  left: 40%;
+  animation: aw-bounce-move 10s 0s infinite;
+}
+
+.aw-bounce-container3--4 {
+  left: 40%;
+  animation: aw-bounce-move 6s 0s infinite;
+}
+
+.aw-bounce-container3--5 {
+  left: 20%;
+  animation: aw-bounce2-move 12s 0s infinite;
+}
+
+.aw-bounce-container3--6 {
+  left: 20%;
+  animation: aw-bounce-move 8s 0s infinite;
+}
+
+.aw-bounce-container3--7 {
+  left: 0%;
+  animation: aw-bounce-move 14s 0s infinite;
+}
+
+.aw-bounce-container3--8 {
+  left: 0%;
+  animation: aw-bounce-move 10s 0s infinite;
+}
+
+.aw-bounce-container3--9 {
+  left: 80%;
+  animation: aw-bounce-move 6s 0s infinite;
+}
+
+.aw-bounce-container3--10 {
+  left: 20vw;
+  animation: aw-bounce-move 2s 0s infinite;
+}

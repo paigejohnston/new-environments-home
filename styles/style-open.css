@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.open-page {
+  background-color: #696969;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  index: -0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curtain {
+  width: 100%; /* Ensures the component is the full screen width */
+  height: 100vh; /* We're using this for demo purposes */
+  overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
+}
+
+.curtain__wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+input[type=checkbox] {
+  position: absolute; /* Force the checkbox at the start of the container */
+  cursor: url("../assets/mousie.png") -1 0, pointer;
+  width: 100%; /* The checkbox is as wide as the component */
+  height: 100%; /* The checkbox is as tall as the component */
+  z-index: 100; /* Make sure the checkbox is on top of everything else */
+  opacity: 0; /* hide the checkbox */
+}
+
+/* Slide the first panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--left {
+    transform: translateY(0);
+}
+
+/* Slide the second panel in */
+input[type=checkbox]:checked ~ div.curtain__panel--right {
+    transform: translateY(0);
+}
+
+.curtain__panel {
+  background-image: linear-gradient(180deg, grey, silver);
+  width: 100%; /* Each panel takes up half the container */
+  height: 50vh; /* Used for demo purposes */
+  float: left; /* Makes sure panels are side-by-side */
+  position: relative; /* Needed to define the z-index */
+  z-index: 2; /* Places the panels in front of the prize */
+  transition: all 1s ease-out; /* Animates the sliding transition */
+}
+
+.curtain__panel--left {
+  transform: translateY(-100%);
+}
+
+.curtain__panel--right {
+    transform: translateY(100%);
+}
+
+.curtain__prize {
+  background-color: #483D8B;
+  position: absolute; /* Forces the prize position into the container start */
+  z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pj-shape-container {
+  position: absolute;
+  left: 27%;
+  top: 8%;
+  border-radius: 50%;
+  border: 1vw solid #7B68EE;
+  height: 45vw;
+  width: 45vw;
+  background-color: snow;
+  box-shadow: 30px 12px  rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pj-shape {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius: 50%;
+  border: 1vw solid black;
+  height: 43vw;
+  width: 43vw;
+  font-size: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #633416;
+}

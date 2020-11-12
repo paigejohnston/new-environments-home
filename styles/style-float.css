@@ -1,0 +1,454 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mouse-cursor.png") -1 0, pointer;
+}
+
+.float-page {
+  background-image: linear-gradient(180deg, #4169E1, #000080);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* BUBBLES floating */
+/*ANNIMATION*/
+.bubbles-container1 {
+  width: 4%;
+  height: 7%;
+  position: absolute;
+  bottom: -30%;
+  left: 0%;
+  z-index: 2;
+  /* animation: bubbles moving 5s infinite; */
+}
+
+.bubbles {
+  background-image: linear-gradient(180deg, white, #000080);
+  border-radius: 100%;
+  width: 10vw;
+  height: 10vw;
+  position: absolute;
+  left: 0%;
+  z-index: 2;
+  opacity: 0.6;
+}
+
+@keyframes bubbles-move {
+
+  0% {
+    bottom: -10vh;
+  }
+
+  60% {
+    bottom: 60vh;
+  }
+
+  90% {
+    bottom: 90vh;
+  }
+
+  100% {
+    bottom: 110vh;
+  }
+}
+
+.bubbles-container1--1 {
+  left: 69%;
+  animation: bubbles-move 12s 1s infinite;
+}
+
+.bubbles-container1--2 {
+  left: 57%;
+  animation: bubbles-move 25s 3s infinite;
+}
+
+.bubbles-container1--3 {
+  left: 68%;
+  animation: bubbles-move 30s 2s infinite;
+}
+
+.bubbles-container1--4 {
+  left: 3%;
+  animation: bubbles-move 12s 0s infinite;
+}
+
+.bubbles-container1--5 {
+  left: 85%;
+  animation: bubbles-move 9s 0s infinite;
+}
+
+.bubbles-container1--6 {
+  left: 46%;
+  animation: bubbles-move 5s 2s infinite;
+}
+
+.bubbles-container1--7 {
+  left: 5%;
+  animation: bubbles-move 18s 3s infinite;
+}
+
+.bubbles-container1--8 {
+  left: 76%;
+  animation: bubbles-move 17s 2s infinite;
+}
+
+.bubbles-container1--9 {
+  left: 34%;
+  animation: bubbles-move 20s 3s infinite;
+}
+
+.bubbles-container1--10 {
+  left: 16%;
+  animation: bubbles-move 12s 5s infinite;
+}
+
+.bubbles-container1--11 {
+  left: 25%;
+  animation: bubbles-move 6s 2s infinite;
+}
+
+.bubbles-container1--12 {
+  left: 10%;
+  animation: bubbles-move 12s 4s infinite;
+}
+
+.bubbles-container1--13 {
+  left: 55%;
+  animation: bubbles-move 6s 5s infinite;
+}
+
+.bubbles-container1--14 {
+  left: 50%;
+  animation: bubbles-move 12s 2s infinite;
+}
+
+.bubbles-container1--15 {
+  left: 12%;
+  animation: bubbles-move 5s 3s infinite;
+}
+
+.bubbles-container1--16 {
+  left: 8%;
+  animation: bubbles-move 10s 2s infinite;
+}
+
+.bubbles-container1--17 {
+  left: 79%;
+  animation: bubbles-move 19s 2s infinite;
+}
+
+.bubbles-container1--18 {
+  left: 45%;
+  animation: bubbles-move 13s 0s infinite;
+}
+
+.bubbles-container1--19 {
+  left: 95%;
+  animation: bubbles-move 6s 3s infinite;
+}
+
+.bubbles-container1--20 {
+  left: 85%;
+  animation: bubbles-move 9s 0s infinite;
+}
+
+.bubbles-container1--21 {
+  left: 55%;
+  animation: bubbles-move 12s 5s infinite;
+}
+
+.bubbles-container1--22 {
+  left: 85%;
+  animation: bubbles-move 18s 6s infinite;
+}
+
+.bubbles-container1--23 {
+  left: 5%;
+  animation: bubbles-move 20s 0s infinite;
+}
+
+.bubbles-container1--24 {
+  left: 36%;
+  animation: bubbles-move 8s 0s infinite;
+}
+
+.bubbles-container1--25 {
+  left: 30%;
+  animation: bubbles-move 13s 0s infinite;
+}
+
+.bubbles-container1--26 {
+  left: 19%;
+  animation: bubbles-move 6s 0s infinite;
+}
+
+.bubbles-container1--27 {
+  left: 75%;
+  animation: bubbles-move 6s 2s infinite;
+}
+/* BUBBLES END */
+
+/* SMALL BUBBLES START */
+.small-bubbles-container1 {
+  width: 2%;
+  height: 4%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 4;
+  opacity: 0.6;
+  overflow: hidden;
+  /* animation: bubbles moving 5s infinite; */
+}
+
+.small-bubbles {
+  background-image: linear-gradient(180deg, white, #000080);
+  border-radius: 100%;
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+}
+
+@keyframes small-bubbles-move {
+
+  0% {
+    bottom: -10vh;
+  }
+
+  100% {
+    bottom: 110vh;
+  }
+}
+
+.small-bubbles-container1--1 {
+  left: 10%;
+  animation: small-bubbles-move 10s 0s infinite;
+}
+
+.small-bubbles-container1--2 {
+  left: 19%;
+  animation: small-bubbles-move 8s 1s infinite;
+}
+
+.small-bubbles-container1--3 {
+  left: 16%;
+  animation: small-bubbles-move 12s 0s infinite;
+}
+
+.small-bubbles-container1--4 {
+  left: 25%;
+  animation: small-bubbles-move 9s 1s infinite;
+}
+
+.small-bubbles-container1--5 {
+  left: 29%;
+  animation: small-bubbles-move 13s 0s infinite;
+}
+
+.small-bubbles-container1--6 {
+  left: 32%;
+  animation: small-bubbles-move 19s 0s infinite;
+}
+
+.small-bubbles-container1--7 {
+  left: 35%;
+  animation: small-bubbles-move 2s 0s infinite;
+}
+
+.small-bubbles-container1--8 {
+  left: 35%;
+  animation: small-bubbles-move 10s 0s infinite;
+}
+
+.small-bubbles-container1--9 {
+  left: 20%;
+  animation: small-bubbles-move 10s 2s infinite;
+}
+
+.small-bubbles-container1--10 {
+  left: 25%;
+  animation: small-bubbles-move 7s 4s infinite;
+}
+
+.small-bubbles-container1--11 {
+  left: 38%;
+  animation: small-bubbles-move 14s 0s infinite;
+}
+
+.small-bubbles-container1--12 {
+  left: 40%;
+  animation: small-bubbles-move 15s 2s infinite;
+}
+
+.small-bubbles-container1--13 {
+  left: 42%;
+  animation: small-bubbles-move 10s 0s infinite;
+}
+
+.small-bubbles-container1--14 {
+  left: 45%;
+  animation: small-bubbles-move 9s 0s infinite;
+}
+
+.small-bubbles-container1--15 {
+  left: 48%;
+  animation: small-bubbles-move 13s 2s infinite;
+}
+
+.small-bubbles-container1--16 {
+  left: 50%;
+  animation: small-bubbles-move 13s 0s infinite;
+}
+
+.small-bubbles-container1--17 {
+  left: 50%;
+  animation: small-bubbles-move 9s 4s infinite;
+}
+
+.small-bubbles-container1--18 {
+  left: 52%;
+  animation: small-bubbles-move 13s 1s infinite;
+}
+
+.small-bubbles-container1--19 {
+  left: 50%;
+  animation: small-bubbles-move 5s 2s infinite;
+}
+
+.small-bubbles-container1--20 {
+  left: 55%;
+  animation: small-bubbles-move 10s 0s infinite;
+}
+
+.small-bubbles-container1--21 {
+  left: 58%;
+  animation: small-bubbles-move 16s 0s infinite;
+}
+
+.small-bubbles-container1--22 {
+  left: 60%;
+  animation: small-bubbles-move 12s 2s infinite;
+}
+
+.small-bubbles-container1--23 {
+  left: 63%;
+  animation: small-bubbles-move 10s 5s infinite;
+}
+
+.small-bubbles-container1--24 {
+  left: 65%;
+  animation: small-bubbles-move 14s 2s infinite;
+}
+
+.small-bubbles-container1--25 {
+  left: 68%;
+  animation: small-bubbles-move 9s 0s infinite;
+}
+
+.small-bubbles-container1--26 {
+  left: 69%;
+  animation: small-bubbles-move 7s 0s infinite;
+}
+
+.small-bubbles-container1--27 {
+  left: 70%;
+  animation: small-bubbles-move 13s 5s infinite;
+}
+
+.small-bubbles-container1--28 {
+  left: 72%;
+  animation: small-bubbles-move 10s 3s infinite;
+}
+
+.small-bubbles-container1--29 {
+  left: 73%;
+  animation: small-bubbles-move 7s 3s infinite;
+}
+
+.small-bubbles-container1--30 {
+  left: 76%;
+  animation: small-bubbles-move 13s 4s infinite;
+}
+
+.small-bubbles-container1--31 {
+  left: 80%;
+  animation: small-bubbles-move 4s 0s infinite;
+}
+
+.small-bubbles-container1--32 {
+  left: 82%;
+  animation: small-bubbles-move 7s 2s infinite;
+}
+
+.small-bubbles-container1--33 {
+  left: 85%;
+  animation: small-bubbles-move 8s 0s infinite;
+}
+
+.small-bubbles-container1--34 {
+  left: 83%;
+  animation: small-bubbles-move 9s 4s infinite;
+}
+
+.small-bubbles-container1--35 {
+  left: 86%;
+  animation: small-bubbles-move 13s 2s infinite;
+}
+
+.small-bubbles-container1--36 {
+  left: 88%;
+  animation: small-bubbles-move 12s 4s infinite;
+}
+
+.small-bubbles-container1--37 {
+  left: 90%;
+  animation: small-bubbles-move 11s 0s infinite;
+}
+
+.small-bubbles-container1--38 {
+  left: 92%;
+  animation: small-bubbles-move 7s 0s infinite;
+}
+
+.small-bubbles-container1--39 {
+  left: 97%;
+  animation: small-bubbles-move 13s 5s infinite;
+}
+
+.small-bubbles-container1--40 {
+  left: 94%;
+  animation: small-bubbles-move 10s 2s infinite;
+}
+
+.small-bubbles-container1--41 {
+  left: 93%;
+  animation: small-bubbles-move 8s 4s infinite;
+}
+
+.small-bubbles-container1--42 {
+  left: 98%;
+  animation: small-bubbles-move 17s 2s infinite;
+}

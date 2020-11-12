@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mousie.png") -1 0, pointer;
+}
+
+.window-page {
+  background-color: #FFFAFA;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* EYES OPENING AND CLOSING ------START HERE */
+.window-container{
+  border: 14px groove #8B4513;
+  height: 45vw;
+  width: 70vw;
+  position: absolute;
+  top: 8%;
+  left: 15%;
+  overflow:hidden;
+}
+
+.window-frame{
+  height: 50vw;
+  width: 60vw;
+  position: absolute;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grass{
+  height: 22.5vw;
+  width: 70vw;
+  background-image: repeating-linear-gradient(#006400, #228B22 10%, #006400 20%);
+  position:absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.sky{
+  height: 30vw;
+  width: 70vw;
+  background-image: linear-gradient(blue, skyblue);
+  position:absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.shut{
+  height: 45vw;
+  width: 70vw;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%) rotate(-0deg);
+  z-index: 999;
+}
+
+.shut span{
+  display:block;
+  width:102%;
+  height:100%;
+  background-image: repeating-linear-gradient(snow, darkgrey 1%, snow 5%);
+  transition:0.4s all;
+}
+
+.window:hover >.shut span{
+  height:15%;
+}
+/* WINDOW / BLIND OPENING AND CLOSING -----END HERE */
+
+/*EDITING SUN STARTS*/
+/* the svg element */
+.sun-container {
+  position: absolute;
+  top: -36%;
+  right: -26%;
+}
+
+.svg-sun{
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+
+-webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+-ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
+}
+
+/* the circle element in the svg itself */
+#sun{
+  stroke-width:0;
+  stroke-dasharray:20;
+  stroke-dashoffset:70;
+}
+
+/* animation for the sun glowing effect */
+@-webkit-keyframes sun-glow {
+	0% { fill: #FFD700; stroke:#FFD700;}
+	50% { fill: #FFA500; stroke:#FFA500;}
+	100% { fill: #F4A460; stroke:#F4A460;}
+}
+@-moz-keyframes sun-glow {
+	0% { fill: #FFD700; stroke:#FFD700;}
+	50% { fill: #FFA500; stroke:#FFA500;}
+	100% { fill: #F4A460; stroke:#F4A460;}
+}
+@-o-keyframes sun-glow {
+	0% { fill: #F4A460; stroke:#FFD700;}
+	50% { fill: #FFA500; stroke:#FFA500;}
+	100% { fill: #F4A460; stroke:#F4A460;}
+}
+@-ms-keyframes sun-glow {
+	0% { fill: #F4A460; stroke:#FFD700;}
+	50% { fill: #FFA500; stroke:#FFA500;}
+	100% { fill: #F4A460; stroke:#F4A460;}
+}
+@keyframes sun-glow {
+	0% { fill: #FFD700; stroke:#FFD700;}
+	20% { fill: #D2691E; stroke:#FFA500;}
+	40% { fill: #FF6347; stroke:#F4A460;}
+  80% { fill: #FFFF00; stroke:#F4A460;}
+  100% { fill: #FFD700; stroke:#F4A460;}
+}
+
+/* start spin animation */
+@-webkit-keyframes spin{
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spin{
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes spin{
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes spin{
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+@keyframes spin{
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* ROTATING SUN ENDS */

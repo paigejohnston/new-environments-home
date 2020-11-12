@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  cursor: url("../assets/mouse-cursor.png") -1 0, pointer;
+}
+
+.waves-page {
+  background-image: linear-gradient(#FFDEAD, #F4A460);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* fluffy fall */
+/* ANNIMATION */
+.fluffy-container1 {
+  width: 50%;
+  height: 80%;
+  background-image: radial-gradient(blue, skyblue, blue);
+  position: absolute;
+  border-radius: 72%, 30%;
+  bottom: 0%;
+  left: 0%;
+  z-index: 2;
+  opacity: 0.2;
+  /* animation: fluffy-moving 9s infinite; */
+}
+
+@keyframes fluffy-move {
+  0% {
+    bottom: -70%;
+    right: 0%;
+  }
+
+  20% {
+    bottom: -50%;
+    right: 0%;
+  }
+
+  30% {
+    bottom: -60%;
+    right: 0%;
+  }
+
+  50% {
+    bottom: -20%;
+    right: 0%;
+  }
+
+  90% {
+    bottom: -50%;
+    right: 2%;
+  }
+
+  100% {
+    bottom: -60%;
+    right: 0%;
+  }
+}
+
+.fluffy-container1--1 {
+  left: 40%;
+  animation: fluffy-move 20s 0s infinite;
+}
+
+.fluffy-container1--2 {
+  left: 23%;
+  animation: fluffy-move 20s 0s infinite;
+}
+
+.fluffy-container1--3 {
+  left: 60%;
+  animation: fluffy-move 32s 0s infinite;
+}
+
+.fluffy-container1--4 {
+  left: 7%;
+  animation: fluffy-move 19.5s 0s infinite;
+}
+
+.fluffy-container1--5 {
+  left: 72%;
+  animation: fluffy-move 20.5s 0s infinite;
+}
+
+.fluffy-container1--6 {
+  left: 24%;
+  animation: fluffy-move 21s 0s infinite;
+}
+
+.fluffy-container1--7 {
+  left: 38%;
+  animation: fluffy-move 19.5s 0s infinite;
+}
+
+.fluffy-container1--8 {
+  left: 15%;
+  animation: fluffy-move 21s 0s infinite;
+}
+
+
+.fluffy-container1--9 {
+  left: 5%;
+  animation: fluffy-move 22s 0s infinite;
+}
+
+.fluffy-container1--10 {
+  left: 35%;
+  animation: fluffy-move 20s 0s infinite;
+}
+
+.fluffy-container1--11 {
+  left: 25%;
+  animation: fluffy-move 32s 0s infinite;
+}
+
+.fluffy-container1--12 {
+  left: 23%;
+  animation: fluffy-move 19s 0s infinite;
+}
+
+.fluffy-container1--13 {
+  left: 8%;
+  animation: fluffy-move 19.5s 0s infinite;
+}
+
+.fluffy-container1--14 {
+  left: 21%;
+  animation: fluffy-move 21s 0s infinite;
+}
+.fluffy-container1--15 {
+  left: 63%;
+  animation: fluffy-move 20s 0s infinite;
+}
+
+.fluffy-container1--16 {
+  left: 1%;
+  animation: fluffy-move 30.5s 0s infinite;
+}
+
+.fluffy-container1--17 {
+  left: 56%;
+  animation: fluffy-move 20.5s 0s infinite;
+}
+
+.fluffy-container1--18 {
+  left: 43%;
+  animation: fluffy-move 20s 0s infinite;
+}
+
+.fluffy-container1--19 {
+  left: 42%;
+  animation: fluffy-move 31s 0s infinite;
+}
+
+.fluffy-container1--20 {
+  left: 0%;
+  animation: fluffy-move 30s 0s infinite;
+}
+
+.fluffy-container1--21 {
+  left: 37%;
+  animation: fluffy-move 22s 0s infinite;
+}
+
+.fluffy-container1--22 {
+  left: 71%;
+  animation: fluffy-move 30.5s 0s infinite;
+}
+
+.fluffy-container1--23 {
+  left: 9%;
+  animation: fluffy-move 21s 0s infinite;
+}
+
+.fluffy-container1--24 {
+  left: 3%;
+  animation: fluffy-move 30s 0s infinite;
+}
+
+.fluffy-container1--25 {
+  left: 19%;
+  animation: fluffy-move 20s 0s infinite;
+}
+
+.fluffy-container1--26 {
+  left: 1%;
+  animation: fluffy-move 22s 0s infinite;
+}
+
+.fluffy-container1--27 {
+  left: 3%;
+  animation: fluffy-move 19s 0s infinite;
+}
+
+.fluffy-container1--28 {
+  left: 0%;
+  animation: fluffy-move 19.5s 0s infinite;
+}
+
+.fluffy-container1--29 {
+  left: 10%;
+  animation: fluffy-move 20s 0s infinite;
+}
+
+.fluffy-container1--30 {
+  left: 2%;
+  animation: fluffy-move 21s 0s infinite;
+}
+
+.fluffy-container1--31 {
+  left: 12%;
+  animation: fluffy-move 30.5s 0s infinite;
+}
+
+.fluffy-container1--32 {
+  left: 13%;
+  animation: fluffy-move 31s 0s infinite;
+}
+
+.fluffy-container1--33 {
+  left: 0%;
+  animation: fluffy-move 19s 0s infinite;
+}
+
+.fluffy-container1--34 {
+  left: 85%;
+  animation: fluffy-move 22s 0s infinite;
+}
+
+.fluffy-container1--35 {
+  left: 23%;
+  animation: fluffy-move 31s 0s infinite;
+}
+
+.fluffy-container1--36 {
+  left: 0%;
+  animation: fluffy-move 19.5s 0s infinite;
+}
+
+.fluffy-container1--37 {
+  left: 45%;
+  animation: fluffy-move 31s 0s infinite;
+}
+
+.fluffy-container1--38 {
+  left: 85%;
+  animation: fluffy-move 30.5s 0s infinite;
+}
+
+.fluffy-container1--39 {
+  left: 85%;
+  animation: fluffy-move 19s 0s infinite;
+}
+
+.fluffy-container1--40 {
+  left: 80%;
+  animation: fluffy-move 19.5s 0s infinite;
+}
+
+.fluffy-container1--41 {
+  left: 75%;
+  animation: fluffy-move 22s 0s infinite;
+}
+
+.fluffy-container1--42 {
+  left: 83%;
+  animation: fluffy-move 30.5s 0s infinite;
+}
+
+.fluffy-container1--43 {
+  left: 87%;
+  animation: fluffy-move 21s 0s infinite;
+}
+
+.fluffy-container1--44 {
+  left: 12%;
+  animation: fluffy-move 30.5s 0s infinite;
+}
+
+.fluffy-container1--45 {
+  left: 44%;
+  animation: fluffy-move 22s 0s infinite;
+}
+
+.fluffy-container1--46 {
+  left: 57%;
+  animation: fluffy-move 30.5s 0s infinite;
+}
+
+.fluffy-container1--47 {
+  left: 59%;
+  animation: fluffy-move 23s 0s infinite;
+}
+
+.fluffy-container1--48 {
+  left: 53%;
+  animation: fluffy-move 32s 0s infinite;
+}
